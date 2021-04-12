@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(17, 16, 16, 0.493);
+  padding: 1rem 0 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 2.5rem 5.5vw;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.refresh {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin: 4rem auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  transition: transform 0.3s linear;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.refresh:hover {
+  transform: scale(1.1);
+}
+.refresh:active {
+  transform: scale(0.5);
+}
+
+.container {
+  // border: 3px solid #fff;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 120rem;
+  max-width: 98%;
+  margin: auto;
+}
+
+.container div {
+  height: 15rem;
+  width: 20rem;
+  margin: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container div input {
+  width: 6.5rem;
+  font-size: 1.6rem;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.container div button {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  background-color: rgba(17, 16, 16, 0.493);
+  padding: 0.5rem 1.5rem;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.container div:hover button {
+  transform: translateX(0);
+}
