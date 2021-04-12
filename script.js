@@ -31,5 +31,10 @@ function copyColor(btn) {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+  colorValue.classList.add(`animate`);
+
+  // remove animation class from color value so it can animated again when clicked second time
+  setTimeout(function () {
+    colorValue.classList.remove(`animate`);
+  }, 500);
 }
