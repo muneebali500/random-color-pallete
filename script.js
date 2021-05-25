@@ -27,14 +27,14 @@ function generatePalette() {
 generatePalette();
 
 function copyColor(btn) {
-  const colrValue = btn.previousElementSibling;
-  colrValue.select();
-  colrValue.setSelectionRange(0, 99999);
+  const colorValue = btn.previousElementSibling;
+  colorValue.select();
+  colorValue.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  colorValue.classList.add(`animate`);
+  colorValue.style.animation = `animate .3s linear`;
 
   // remove animation class from color value so it can animated again when clicked second time
-  setTimeout(function () {
-    colorValue.classList.remove(`animate`);
+  setTimeout(() => {
+    colorValue.style.animation = `none`;
   }, 500);
 }
