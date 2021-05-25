@@ -27,9 +27,9 @@ function generatePalette() {
 generatePalette();
 
 function copyColor(btn) {
-  const copyText = btn.previousElementSibling;
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
+  const colrValue = btn.previousElementSibling;
+  colrValue.select();
+  colrValue.setSelectionRange(0, 99999);
   document.execCommand("copy");
   colorValue.classList.add(`animate`);
 
