@@ -4,7 +4,7 @@
 
 This is a Frontend Development project Designed and Developed by me using HTML, CSS and mostly JavaScript. I have created this project to practice and showcase my Frontend skills. In this project, the user can generate random colors and pick one to use in the Website Development project.
 
-[Link to Live Project](https://github.com/muneebali500/random-color-pallete)
+[Link to Live Project](https://muneebali500.github.io/random-color-pallete/)
 
 ![Color Pallete Page](/colorgenerate.png)
 
