@@ -6,7 +6,7 @@ This is a Frontend Development project Designed and Developed by me using HTML, 
 
 [Link to Live Project](https://github.com/muneebali500/random-color-pallete)
 
-![Color Pallete Page](/colorpallete.png)
+![Color Pallete Page](/colorgenerate.png)
 
 ## Technologies Used
 
